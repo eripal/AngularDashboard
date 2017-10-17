@@ -3,18 +3,18 @@ import {URLSearchParams} from 'angular2/http';
 
 Injectable()
 
-export class TrainService
+export class NewsService
 {
-    trains:Array<any>;
+    news:Array<any>;
     constructor()
     {
-        this.trains = [
+        this.news = [
             { trainNo: '986', arrive: '22:37', info: '', estimate: '' },
             { trainNo: '986', arrive: '05:53', info: 'crash', estimate: '05:55' }
         ]
     }
-    getTrains()
+    getNews()
     {
-        return this.trains;
+        return this.news;
     }
 }
